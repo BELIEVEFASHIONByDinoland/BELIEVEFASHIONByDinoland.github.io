@@ -21,9 +21,10 @@
 
             // get the browser language
             const browserLanguage = navigator.language || navigator.userLanguage;
+            const pcLanguage = Intl.DateTimeFormat().resolvedOptions().locale;
 
             // redirect based on language and base URL
-            if (browserLanguage.includes("ja")) {
+            if (browserLanguage.includes("ja") || pcLanguage.includes("ja")) {
               window.location.href = baseUrl + "jp/" + dynamicPart;
             } else {
               window.location.href = baseUrl + "en/" + dynamicPart;
