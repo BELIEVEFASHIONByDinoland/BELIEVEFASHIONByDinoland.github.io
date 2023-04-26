@@ -14,5 +14,20 @@
         <meta name="twitter:title" content="BELIEVE FASHION • ビリーブ ファッション">
     </head>
     <body>
+        <script>
+            // get the base URL and split it
+            const baseUrl = window.location.href.split(".click/")[0] + ".click/";
+            const dynamicPart = window.location.href.split(".click/")[1];
+
+            // get the browser language
+            const browserLanguage = navigator.language || navigator.userLanguage;
+
+            // redirect based on language and base URL
+            if (browserLanguage.includes("ja")) {
+              window.location.href = baseUrl + "jp/" + dynamicPart;
+            } else {
+              window.location.href = baseUrl + "en/" + dynamicPart;
+            }
+        </script>
     </body>
 </html>
