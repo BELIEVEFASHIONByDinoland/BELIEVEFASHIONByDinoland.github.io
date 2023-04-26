@@ -2,7 +2,6 @@
     --COLORNOTFOUND: #404;
 }
 
-:lang(en) {
 body {
     background-color: black;
     margin: 0;
@@ -29,4 +28,3 @@ div#title>span#subtitle {
     writing-mode: vertical-rl;
     font-size: 4.2vw;
 };
-}
