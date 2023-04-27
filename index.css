@@ -2,6 +2,10 @@
     --COLORNOTFOUND: #404;
 }
 
+html {
+    margin: 25px 20px;
+}
+
 body:lang(en) {
     background-color: black;
     margin: 0;
