@@ -2,12 +2,24 @@
     --COLORNOTFOUND: #404;
 }
 
+html[theme=dark] {
+    --themeBG: black;
+    --themeFG: white;
+    --themeHL: var(--COLORNOTFOUND);
+}
+
+html[theme=light] {
+    --themeBG: white;
+    --themeFG: black;
+    --themeHL: var(--COLORNOTFOUND);
+}
+
 html {
     margin: 25px 20px;
 }
 
 body:lang(en) {
-    background-color: black;
+    background-color: var(--themeBG);
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -24,8 +36,8 @@ div#title:lang(en) {
     border-width: 1vw;
     border-style: solid;
     margin: 2.5vh 2.0vw;
-    color: var(--COLORNOTFOUND);
-    border-color: white;
+    color: var(--themeHL);
+    border-color: var(--themeFG);
 }
 
 div#title:lang(en)>span#subtitle:lang(en) {
