@@ -4,8 +4,10 @@ const HTML = document.querySelector("html")
 
 // LOAD WEB THEME
 
-const cookieValue = document.cookie.split('; ').find(row => row.startsWith('theme='))?.split('=')[1] || null;
+const themeCOOKIE = document.cookie.split('; ').find(row => row.startsWith('theme='))?.split('=')[1] || null;
 
-if (cookieValue) {
-    HTML.setAttribute('theme', cookieValue);
+if (themeCOOKIE) {
+    HTML.setAttribute('theme', themeCOOKIE);
+} else {
+    HTML.setAttribute("theme", dark)
 }
