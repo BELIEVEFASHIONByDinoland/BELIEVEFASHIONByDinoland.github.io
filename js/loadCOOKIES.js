@@ -9,5 +9,5 @@ const themeCOOKIE = document.cookie.split('; ').find(row => row.startsWith('them
 if (themeCOOKIE) {
     HTML.setAttribute('theme', themeCOOKIE);
 } else {
-    HTML.setAttribute("theme", dark)
+    HTML.setAttribute("theme", "dark")
 }
