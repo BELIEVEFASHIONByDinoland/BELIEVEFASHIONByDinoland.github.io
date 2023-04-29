@@ -69,9 +69,11 @@ div#title:lang(ja) {
     margin: 2.5vh 2.0vw;
     color: var(--themeHL);
     border-color: var(--themeFG);
+    display: flex;
+    align-items: center;
 }
 
 div#title:lang(ja)>span#subtitle:lang(ja) {
     writing-mode: vertical-rl;
-    font-size: 2.1vw;
+    font-size: 1.1vw;
 }
