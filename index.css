@@ -18,6 +18,8 @@ html {
     margin: 25px 20px;
 }
 
+/*ENGLISH*/
+
 body:lang(en) {
     background-color: var(--themeBG);
     margin: 0;
@@ -41,6 +43,35 @@ div#title:lang(en) {
 }
 
 div#title:lang(en)>span#subtitle:lang(en) {
+    writing-mode: vertical-rl;
+    font-size: 2.1vw;
+}
+
+/*JAPANESE*/
+
+body:lang(jp) {
+    background-color: var(--themeBG);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+div#title:lang(jp) {
+    font-size: 7.5vw;
+    font-family: 'Corporate Logo';
+    padding: 1.0vh 2.5vw;
+    width: auto;
+    height: fit-content;
+    border-width: 1vw;
+    border-style: solid;
+    margin: 2.5vh 2.0vw;
+    color: var(--themeHL);
+    border-color: var(--themeFG);
+}
+
+div#title:lang(jp)>span#subtitle:lang(jp) {
     writing-mode: vertical-rl;
     font-size: 2.1vw;
 }
