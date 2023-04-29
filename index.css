@@ -49,7 +49,7 @@ div#title:lang(en)>span#subtitle:lang(en) {
 
 /*JAPANESE*/
 
-body:lang(jp) {
+body:lang(ja) {
     background-color: var(--themeBG);
     margin: 0;
     display: flex;
@@ -58,7 +58,7 @@ body:lang(jp) {
     flex-wrap: wrap;
 }
 
-div#title:lang(jp) {
+div#title:lang(ja) {
     font-size: 7.5vw;
     font-family: 'Corporate Logo';
     padding: 1.0vh 2.5vw;
@@ -71,7 +71,7 @@ div#title:lang(jp) {
     border-color: var(--themeFG);
 }
 
-div#title:lang(jp)>span#subtitle:lang(jp) {
+div#title:lang(ja)>span#subtitle:lang(ja) {
     writing-mode: vertical-rl;
     font-size: 2.1vw;
 }
