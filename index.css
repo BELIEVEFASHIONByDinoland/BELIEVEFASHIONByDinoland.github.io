@@ -91,3 +91,10 @@ div#themeswitch {
     border-color: var(--themeFG);
     width: fit-content;
 }
+
+div#header {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
