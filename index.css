@@ -90,6 +90,7 @@ div#themeswitch {
     color: var(--themeHL);
     border-color: var(--themeFG);
     width: fit-content;
+    cursor: pointer;
 }
 
 div#header {
